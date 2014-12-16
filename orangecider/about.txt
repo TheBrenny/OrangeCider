@@ -1,0 +1,5 @@
+Theme name:	OrangeCider
+Description:	An orange theme full of citric acids that are nice and tangy!
+Author name:	Jarod Brennfleck
+Author site:	http://www.brennytizer.com.au
+License:	http://www.brennytizer.com.au/license
