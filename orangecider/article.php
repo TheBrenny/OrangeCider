@@ -13,9 +13,9 @@
         <div id="comments">
           <?php if(comments_open()) : ?>
             <h3>Comments!</h3>
-            <p>Total comments: <?php echo total_comments(); ?></p>
+            <p>Total comments: <?php echo total_comments(); ?><br>
             <?php if(total_comments() < 1) : ?>
-              <p>Be the first to comment!</p>
+              Be the first to comment!</p>
             <?php endif; ?>
             <?php if(has_comments()) : ?>
               <?php while(comments()) : ?>

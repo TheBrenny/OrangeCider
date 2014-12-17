@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px 0 5px 0;
 }
 
+h3 {
+  font: normal 135% 'century gothic', arial, sans-serif;
+}
+
 h2 {
   font: normal 175% 'century gothic', arial, sans-serif;
   color: #1293EE;
@@ -356,4 +360,11 @@ table tr td {
   background: #F0EFE2;
   color: #47433F;
   border-top: 1px solid #FFF;
+}
+
+#user_welcome {
+  float: right;
+  text-align: right;
+  padding-top: 22px;
+  padding-bottom: 5px;
 }

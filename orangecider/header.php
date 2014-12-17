@@ -17,6 +17,9 @@
             <h2 id="motto"><i>All this code...</i></h2>
             <script>changeMotto();</script>
           </div>
+          <div id="user_welcome">
+            <h3 style="color:#FFF">Welcome, <b><?php echo (user_authed() ? user_authed_real_name() : 'Guest')?></b>!</h3>
+          </div>
         </div>
         <div id="menubar">
           <ul id="menu">
@@ -28,10 +31,10 @@
               </nav>
             <?php endif; ?>
           </ul>
-          <form style="float:right;margin: 10px 0 0 0;" action="<?php echo search_url(); ?>" method="post" id="search_form">
+          <form style="float:right;margin: 10px 0 0 0;padding-top: 5px;" action="<?php echo search_url(); ?>" method="post" id="search_form">
             <p>
               <input class="search" type="text" name="term" id="term" placeholder="Search..." value="<?php echo search_term()?>" />
-              <input type="image" name="submit" alt="Search" title="Search" src="<?php echo theme_url('style/search.png')?>" align="middle" />
+              <input style="padding-bottom:10px;" type="image" name="submit" alt="Search" title="Search" src="<?php echo theme_url('style/search.png')?>" align="middle" />
             </p>
           </form>
         </div>

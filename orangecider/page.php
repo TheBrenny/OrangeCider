@@ -3,7 +3,7 @@
       <?php theme_include('sidebar'); ?>
       <div id="content">
         <header>
-          <h3><?php echo page_title(); ?></h3>
+          <h1><?php echo page_title(); ?></h1>
         </header>
         <p><?php echo page_content(); ?></p>
       </div>
