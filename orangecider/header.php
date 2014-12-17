@@ -27,11 +27,12 @@
                 <?php endwhile; ?>
               </nav>
             <?php endif; ?>
-            <!-- <li class="selected"><a href="index.html">Home</a></li> -->
-            <!-- <li><a href="examples.html">Examples</a></li> -->
-            <!-- <li><a href="page.html">A Page</a></li> -->
-            <!-- <li><a href="another_page.html">Another Page</a></li> -->
-            <!-- <li><a href="contact.html">Contact Us</a></li> -->
           </ul>
+          <form style="float:right;margin: 10px 0 0 0;" action="<?php echo search_url(); ?>" method="post" id="search_form">
+            <p>
+              <input class="search" type="text" name="term" id="term" placeholder="Search..." value="<?php echo search_term()?>" />
+              <input type="image" name="submit" alt="Search" title="Search" src="<?php echo theme_url('style/search.png')?>" align="middle" />
+            </p>
+          </form>
         </div>
       </div>

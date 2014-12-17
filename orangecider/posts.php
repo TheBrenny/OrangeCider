@@ -15,11 +15,6 @@
           </article>
         <?php endwhile; endif; ?>
       </div>
-      <?php if(has_pagination()) : ?>
-        <nav class="pagination">
-          <?php echo posts_prev(); ?>
-          <?php echo posts_next(); ?>
-        </nav>
-      <?php endif; ?>
+      <?php theme_include('pagination'); ?>
     </div>
     <?php theme_include('footer'); ?>

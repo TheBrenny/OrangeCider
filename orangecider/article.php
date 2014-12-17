@@ -10,12 +10,26 @@
           <br style="clear:left">
           <?php echo article_markdown(); ?>
         </article>
+        <div id="comments">
+          <?php if(comments_open()) : ?>
+            <h3>Comments!</h3>
+            <p>Total comments: <?php echo total_comments(); ?></p>
+            <?php if(total_comments() < 1) : ?>
+              <p>Be the first to comment!</p>
+            <?php endif; ?>
+            <?php if(has_comments()) : ?>
+              <?php while(comments()) : ?>
+                <h4 style="float:left"><?php echo comment_name(); ?></h4>
+                <h5 style="float:right"><?php echo comment_date(); ?></h5>
+                <br style="clear:both">
+                <?php echo comment_body(); ?>
+              <?php endwhile; ?>
+            <?php endif; ?>
+          <?php else : ?>
+            <p style="color:red">Comments are closed for this article. Sorry! :(</p>
+          <?php endif; ?>
+        </div>
       </div>
-      <?php if(has_pagination()) : ?>
-        <nav class="pagination">
-          <?php echo posts_prev(); ?>
-          <?php echo posts_next(); ?>
-        </nav>
-      <?php endif; ?>
+      <?php theme_include('pagination'); ?>
     </div>
     <?php theme_include('footer'); ?>
