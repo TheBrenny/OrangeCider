@@ -109,8 +109,8 @@ ol li {
 }
 
 #main, #logo, #menubar, #site_content, #footer {
-  margin-left: auto; 
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 #content_footer {
@@ -196,9 +196,11 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover {
 }
 
 #site_content {
+  clear: both;
+  display: block;
   width: 837px;
   overflow: hidden;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   padding: 20px 24px 20px 37px;
   background: #FFF url(content.png) repeat-y;
 }
